@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOAL NEWS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+        <img id="logo" src="logo.png" alt="Logo da empresa Goal News"/>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#placar">Placar</a></li>
+            <li><a href="#destaques">Destaques</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="boas-vindas">
+        <h1>Bem-vindo ao GOAL NEWS</h1>
+        <p>Lances incríveis, gols históricos e tudo o que rola no mundo da bola </p>
+        <p>AO VIVO e na palma da sua mão!</p>
+    </section>
+
+    <section id="placar">
+        <h1>Placar ao vivo</h1>
+        <h2>Jogos rolando agora</h2>
+        <div class="placares">
+            <div class="card-jogo">
+              <div class="info-times">
+                <img src="escudo.palmeiras.png" alt="Escudo Palmeiras">
+                <span class="time-nome">Palmeiras</span>
+                <strong class="placar">1 x 0</strong>
+                <span class="time-nome">Corinthians</span>
+                <img src="escudo.corinthians.png" alt="Escudo Corinthians">
+              </div>
+              <div class="info-status">
+              <span class="ao-vivo">AO VIVO</span>
+              <small>1ºT 33’</small>
+            </div>
+          </div>
+          <div class="card-jogo">
+            <div class="info-times">
+                <img src="escudo.flamengo.png" alt="Escudo Flamengo">
+                <span class="time-nome">Flamengo</span>
+                <strong class="placar">2 x 2</strong>
+                <span class="time-nome">Grêmio</span>
+                <img src="escudo.gremio.png" alt="Escudo Grêmio">
+            </div>
+              <div class="info-status">
+                <span class="ao-vivo">AO VIVO</span>
+                <small>2ºT 12’</small>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destaques">
+        <h1>Destaques em vídeo</h1>
+        <h2>Top Lances do Dia</h2>
+        <div class="grid-videos">
+            <div class="card-video">
+                <iframe width="100%" height="250" 
+                    src="https://www.youtube.com/embed/aIJ6Fue1mPE"
+                    title="Golaço de bicicleta do Vasco na Copinha"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              <div class="info-video">
+                <h3>Bicicleta insana na Copinha!</h3>
+                <span class="tempo-video">0:45</span>
+              </div>
+            </div>
+            <div class="card-video">
+                <iframe width="100%" height="250"
+                    src="https://www.youtube.com/embed/1-dWPax_8Gc"
+                    title="Maiores defesas de Cássio pelo Corinthians"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="info-video">
+                  <h3>Milagre do Cássio salva o Timão!</h3>
+                  <span class="tempo-video">1:12</span>
+                </div>
+            </div>
+            <div class="card-video">
+                <iframe width="100%" height="250"
+                    src="https://www.youtube.com/embed/wWZ7BZN3_pE"
+                    title="Gol de Piquerez na vitória do Palmeiras"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="info-video">
+                  <h3>Gol decisivo do Piquerez!</h3>
+                  <span class="tempo-video">1:05</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias">
+        <h1>Notícias rápidas</h1>
+        <h2>Últimos Lances</h2>
+        <div class="stories-news">
+            <div class="card-noticia">
+              <img src="noticia1.jpeg" alt="Ícone Lesão">
+              <div class="texto-noticia">
+                <h3>Lesão grave no Palmeiras</h3>
+                <p>Atacante sai de campo chorando após entrada dura.</p>
+              </div>
+            </div>
+            <div class="card-noticia">
+                <img src="noticia2.jpeg" alt="Ícone Gol">
+                <div class="texto-noticia">
+                  <h3>Gol de falta incrível!</h3>
+                  <p>Flamengo abre o placar com uma bomba aos 22’.</p>
+                </div>
+            </div>
+            <div class="card-noticia">
+                <img src="noticia3.jpeg" alt="Ícone VAR">
+                <div class="texto-noticia">
+                  <h3>Polêmica no VAR</h3>
+                  <p>Juiz anula gol do Grêmio após 5 minutos de revisão.</p>
+                </div>
+            </div>
+        </div>
+        <a href="noticias.html" class="botao-ver-tudo">Ver tudo</a>
+    </section>
+
+    <section id="agenda">
+        <h1>Agenda de jogos</h1>
+        <h2>Vai rolar em breve</h2>
+        <div class="filtros-agenda">
+            <button class="filtro ativo" onclick="filtrarJogos('hoje')">Hoje</button>
+            <button class="filtro" onclick="filtrarJogos('amanha')">Amanhã</button>
+        </div>
+        <div class="lista-jogos" id="lista-jogos">
+        </div>
+    </section>
+    
+    <script>
+        const jogos = {
+          hoje: [
+            {
+              timeA: "Palmeiras",
+              escudoA: "escudo.palmeiras.png",
+              timeB: "Flamengo",
+              escudoB: "escudo.flamengo.png",
+              horario: "21:30",
+              campeonato: "Brasileirão Série A",
+              link: "#"
+            },
+            {
+              timeA: "Vasco",
+              escudoA: "escudo.vasco.png",
+              timeB: "Botafogo",
+              escudoB: "escudo.botafogo.png",
+              horario: "19:00",
+              campeonato: "Copa do Brasil",
+              link: "#"
+            }
+          ],
+          amanha: [
+            {
+              timeA: "Corinthians",
+              escudoA: "escudo.corinthians.png",
+              timeB: "São Paulo",
+              escudoB: "escudo.saopaulo.png",
+              horario: "16:00",
+              campeonato: "Campeonato Paulista",
+              link: "#"
+            },
+            {
+              timeA: "Grêmio",
+              escudoA: "escudo.gremio.png",
+              timeB: "Internacional",
+              escudoB: "escudo.inter.png",
+              horario: "18:45",
+              campeonato: "Copa do Brasil",
+              link: "#"
+            }
+          ]
+        };
+
+        function filtrarJogos(dia) {
+    const lista = document.getElementById("lista-jogos");
+    const botoes = document.querySelectorAll(".filtro");
+
+    botoes.forEach(btn => btn.classList.remove("ativo"));
+    document.querySelector(`[onclick="filtrarJogos('${dia}')"]`).classList.add("ativo");
+
+    lista.innerHTML = "";
+
+    jogos[dia].forEach(jogo => {
+      const card = document.createElement("div");
+      card.className = "card-jogo";
+      card.innerHTML = `
+        <div class="linha-times">
+          <div class="time">
+            <img src="${jogo.escudoA}" alt="${jogo.timeA}" />
+            <span>${jogo.timeA}</span>
+          </div>
+          <span class="versus">x</span>
+          <div class="time">
+            <img src="${jogo.escudoB}" alt="${jogo.timeB}" />
+            <span>${jogo.timeB}</span>
+          </div>
+        </div>
+        <div class="info-jogo">
+          ${jogo.horario} • ${jogo.campeonato}
+        </div>
+        <a href="${jogo.link}" class="assistir" target="_blank">Assistir</a>
+      `;
+      lista.appendChild(card);
+    });
+  }
+
+  filtrarJogos('hoje');
+</script>
+
+<footer id="footer">
+    <img id="logo" src="logo.png" alt=""/>
+    <div class="footer-contato">
+        <a href="mailto:contato@goalnews.com">contato@goalnews.com</a>
+    </div>
+    <div class="footer-redes">
+        <a href="https://www.instagram.com/paiva.biih/" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Twitter</a>
+        <a href="#" target="_blank">YouTube</a>
+      </div>
+      <div class="footer-copy">
+        © GOAL NEWS 2025
+      </div>
+</footer>
+</body>
+</html>
